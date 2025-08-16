@@ -243,7 +243,7 @@ function App() {
                 15 SUCOS DETOX
               </h5>
               <p className="text-green-600 font-bold text-lg">
-                <span className="line-through text-gray-500">R$29,00</span> HOJE É GRÁTIS!
+                <span className="line-through text-gray-500">R$19,90</span> HOJE É GRÁTIS!
               </p>
             </div>
           </div>
@@ -304,7 +304,7 @@ function App() {
       <section className="bg-gradient-to-b from-amber-800 to-amber-900 py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">
-            150 CAFÉS DA MANHÃ DE NUTRI (COM SABOR)®
+            200 CAFÉS DA MANHÃ DE NUTRI (COM SABOR)®
           </h2>
 
           <div className="bg-stone-100 rounded-lg p-8 mb-8 max-w-md mx-auto">
@@ -316,8 +316,8 @@ function App() {
 
             <div className="mb-6">
               <p className="text-2xl text-gray-500 line-through mb-2">De R$129,00...</p>
-              <p className="text-lg text-gray-700 mb-2">por 5x de R$6,63</p>
-              <p className="text-3xl font-bold text-green-600">ou R$29,90 à vista</p>
+              <p className="text-lg text-gray-700 mb-2">por 4x de R$4,63</p>
+              <p className="text-3xl font-bold text-green-600">ou R$19,90 à vista</p>
             </div>
 
             <p className="text-red-600 font-bold text-lg mb-6">
