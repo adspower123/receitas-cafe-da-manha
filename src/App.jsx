@@ -94,10 +94,10 @@ function App() {
             ))}
           </div>
 
-          {/* CTA Button */}
           <Button 
             size="lg" 
             className="bg-green-500 hover:bg-green-600 text-white font-bold text-lg px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+            onClick={() => document.getElementById("checkout-button").scrollIntoView({ behavior: "smooth" })}
           >
             QUERO AS RECEITAS!
           </Button>
@@ -128,6 +128,7 @@ function App() {
           <Button 
             size="lg" 
             className="bg-green-500 hover:bg-green-600 text-white font-bold text-lg px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+            onClick={() => document.getElementById("checkout-button").scrollIntoView({ behavior: "smooth" })}
           >
             QUERO AS RECEITAS!
           </Button>
@@ -148,7 +149,7 @@ function App() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {recipes.map((recipe, index) => (
-              <div key={index} className="bg-stone-100 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+              <div key={index} className="bg-stone-100 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 cursor-pointer" onClick={() => document.getElementById("checkout-button").scrollIntoView({ behavior: "smooth" })}>
                 <div className="aspect-video overflow-hidden">
                   <img 
                     src={recipe.image} 
@@ -324,6 +325,7 @@ function App() {
             </p>
 
             <Button 
+              id="checkout-button"
               size="lg" 
               className="w-full bg-green-500 hover:bg-green-600 text-white font-bold text-lg py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
             >
