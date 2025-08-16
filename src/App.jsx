@@ -328,6 +328,7 @@ function App() {
               id="checkout-button"
               size="lg" 
               className="w-full bg-green-500 hover:bg-green-600 text-white font-bold text-lg py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+              onClick={() => window.location.href = "https://lastlink.com/p/C1CA067BB/checkout-payment"}
             >
               QUERO AS RECEITAS AGORA!
             </Button>
