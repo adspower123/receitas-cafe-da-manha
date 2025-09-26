@@ -303,37 +303,70 @@ function App() {
       {/* Pricing Section */}
       <section className="bg-gradient-to-b from-amber-800 to-amber-900 py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">
-            200 CAFÉS DA MANHÃ DE NUTRI (COM SABOR)®
-          </h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">
+              ESCOLHA O SEU PLANO
+            </h2>
 
-          <div className="bg-stone-100 rounded-lg p-8 mb-8 max-w-md mx-auto">
-            <div className="mb-6">
-              <p className="text-gray-600 mb-2">+ BOLOS SEM AÇÚCAR</p>
-              <p className="text-gray-600 mb-2">+ PÃES SEM GLÚTEN</p>
-              <p className="text-gray-600 mb-4">+ SALADAS E MOLHOS</p>
+            <div className="grid md:grid-cols-2 gap-8">
+              {/* Plano Atual */}
+              <div className="bg-stone-100 rounded-lg p-8 shadow-lg">
+                <h3 className="text-2xl font-bold text-gray-800 mb-4">Plano Básico</h3>
+                <div className="mb-6">
+                  <p className="text-gray-600 mb-2">+ BOLOS SEM AÇÚCAR</p>
+                  <p className="text-gray-600 mb-2">+ PÃES SEM GLÚTEN</p>
+                  <p className="text-gray-600 mb-4">+ SALADAS E MOLHOS</p>
+                </div>
+
+                <div className="mb-6">
+                  <p className="text-2xl text-gray-500 line-through mb-2">De R$129,00...</p>
+                  <p className="text-lg text-gray-700 mb-2">por 2x de R$5,30</p>
+                  <p className="text-3xl font-bold text-green-600">ou R$10,00 à vista</p>
+                </div>
+
+                <p className="text-red-600 font-bold text-lg mb-6">
+                  **OFERTA EXPIRA HOJE**
+                </p>
+
+                <Button 
+                  id="checkout-button-basico"
+                  size="lg" 
+                  className="w-full bg-green-500 hover:bg-green-600 text-white font-bold text-lg py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                  onClick={() => window.location.href = "https://lastlink.com/p/C49817486/checkout-payment/"}
+                >
+                  QUERO O PLANO BÁSICO!
+                </Button>
+              </div>
+
+              {/* Novo Plano Premium */}
+              <div className="bg-stone-100 rounded-lg p-8 shadow-lg border-2 border-blue-500">
+                <h3 className="text-2xl font-bold text-blue-700 mb-4">Plano Premium</h3>
+                <div className="mb-6">
+                  <p className="text-gray-600 mb-2">+ TODOS OS BÓNUS DO BÁSICO</p>
+                  <p className="text-gray-600 mb-2">+ E-BOOK EXCLUSIVO DE SOBREMESAS FIT</p>
+                  <p className="text-gray-600 mb-4">+ ACESSO A COMUNIDADE VIP</p>
+                </div>
+
+                <div className="mb-6">
+                  <p className="text-2xl text-gray-500 line-through mb-2">De R$249,00...</p>
+                  <p className="text-lg text-gray-700 mb-2">por 2x de R$10,550</p>
+                  <p className="text-3xl font-bold text-blue-600">ou R$19,90 à vista</p>
+                </div>
+
+                <p className="text-orange-600 font-bold text-lg mb-6">
+                  **MELHOR OFERTA!**
+                </p>
+
+                <Button 
+                  id="checkout-button-premium"
+                  size="lg" 
+                  className="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold text-lg py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                  onClick={( ) => window.location.href = "https://lastlink.com/p/C1CA067BB/checkout-payment"}
+                >
+                  QUERO O PLANO PREMIUM!
+                </Button>
+              </div>
             </div>
-
-            <div className="mb-6">
-              <p className="text-2xl text-gray-500 line-through mb-2">De R$129,00...</p>
-              <p className="text-lg text-gray-700 mb-2">por 4x de R$4,63</p>
-              <p className="text-3xl font-bold text-green-600">ou R$19,90 à vista</p>
-            </div>
-
-            <p className="text-red-600 font-bold text-lg mb-6">
-              **OFERTA EXPIRA HOJE**
-            </p>
-
-            <Button 
-              id="checkout-button"
-              size="lg" 
-              className="w-full bg-green-500 hover:bg-green-600 text-white font-bold text-lg py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
-              onClick={() => window.location.href = "https://lastlink.com/p/C1CA067BB/checkout-payment"}
-            >
-              QUERO AS RECEITAS AGORA!
-            </Button>
           </div>
-        </div>
       </section>
 
       {/* Guarantee Section */}
