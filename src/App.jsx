@@ -72,7 +72,7 @@ function App() {
         <div className="max-w-6xl mx-auto text-center">
           {/* Título Principal */}
           <h1 className="text-4xl md:text-6xl font-bold mb-4 tracking-wide">
-            150 CAFÉS DA MANHÃ
+            200 RECEITAS DE CAFÉS DA MANHÃ
           </h1>
           <h2 className="text-2xl md:text-4xl font-bold mb-6">
             <span className="font-normal">de</span> NUTRI <span className="font-normal">(com sabor)</span>
